@@ -20,6 +20,11 @@ h2 {
   font-size: 50px;
 }
 
+/*
+Todos os h3 devem ser estilizandos individualmente
+Por meio da criação de classes
+*/
+
 /* NAVBAR */
 
 .header-content {
@@ -29,7 +34,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
 }
 
 .nav-content {
@@ -64,7 +69,7 @@ h2 {
   text-decoration: none;
   display: flex;
   align-items: center;
-  color: black;
+  color: rgb(0, 0, 0);
   height: 50px;
   font-weight: 600;
 }
@@ -115,8 +120,133 @@ h2 {
 
 /* SOBRE NÓS */
 
+.container-about {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-about {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-box-img {
+  width: 400px;
+  height: 400px;
+  border-radius: 15px;
+  background-image: url('../images/foto-person.jpeg');
+  background-position: center;
+  background-size: cover;
+}
+
+.about-box-form {
+  width: 500px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form-align {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.title-about {
+  font-size: 30px;
+  border-bottom: 3px solid #e1e505;
+  width: 150px;
+}
+
+.form-align p {
+  font-size: 20px;
+}
+
+.button-about {
+  padding: 5px 40px;
+  background-color: transparent;
+  border: 3px solid #E5057A;
+  color: #E5057A;
+  border-radius: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.button-about:hover {
+  transition: 0.3s;
+  background-color: #E5057A;
+  color: white;
+}
+
 /* PRODUTOS */
 
+.container-products {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../images/background-products.jpg');
+  background-size: cover;
+}
+
+.box-products {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.title-products {
+  font-size: 60px;
+  color: white;
+  -webkit-text-stroke: 3px black;
+}
+
+.box-products-itens {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.item {
+  width: 250px;
+  height: 450px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.item-img {
+  width: 100%;
+  height: 200px;
+  background-color: rgb(165, 165, 165);
+}
+
+.form-align-product {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
 /* FEEDBACKS */
 
 /* CONTATOS */

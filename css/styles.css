@@ -1,105 +1,125 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
   outline: none;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto';
 }
 
-:root {
-  --cor1: #7700ff;
-  --cor2: #0052bd;
-  --cor3: rgb(255, 0, 242);
-  --cor4: #ffff;
+h1 {
+  font-size: 80px;
+  color: white;
+  -webkit-text-stroke: 4px black;
 }
 
-html,
-body {
-  height: 100vh;
-  padding: 0;
-  display: flex;
-  margin: 0;
-  width: 100%;
-  overflow-x: hidden;
-  background-image: url(/images/background.jpg) ;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  
-  
+h2 {
+  font-family: 'Pacifico', cursive;
+  font-size: 50px;
 }
 
-header {
-  width: 100%;
-  height: 100px;
-  background: transparent;
-  backdrop-filter: blur(15px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-
-  }
+/* NAVBAR */
 
 .header-content {
-  max-width: 1000px;
-  min-width: 300px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-}
-
-nav {
+  position: fixed;
   width: 100%;
-  height: 75px;
-  display: flex;  
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.brand {
-  font-size: 24px;
-  color: var(--cor2);
-  cursor: pointer;
-}
-nav p {
-  color: var(--cor1);
-  font-weight: bold;
-  font-size: 25px;
-}
-
-nav ul {
+  height: 70px;
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
 }
 
-nav ul li {
+.nav-content {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-list {
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar-list li {
   list-style: none;
-  padding: 10px;
+  cursor: pointer;
+  height: 50px;
+  padding: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-list li:hover {
+  background-color: rgb(110, 173, 255);
+  transition: 0.3s;
   cursor: pointer;
 }
 
-nav ul li a {
-  color: var(--cor3);
+.navbar-list li a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+  height: 50px;
+  font-weight: 600;
+}
+
+.navbar-list li a:hover {
+  color: white;
   text-decoration: none;
 }
 
-nav ul li a:hover {
-  color: var(--cor4);
-
-}
-
-nav ul i{
-
-  color: var(--cor3);
-  font-size: 40px;
+.instagram-icon {
+  width: 50px;
+  height: 50px;
   cursor: pointer;
-
 }
 
-nav ul i:hover{
-  color: var(--cor4);
 
+/* TELA DE HOME */
+
+.container-home {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../images/background.jpg');
+  background-size: cover;
+  background-position: bottom;
+  gap: 3rem;
 }
+
+.button-home {
+  padding: 5px 40px;
+  background-color: transparent;
+  border: 3px solid white;
+  color: white;
+  border-radius: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.button-home:hover {
+  transition: 0.3s;
+  color: #E5057A;
+  background-color: white;
+}
+
+/* SOBRE NÓS */
+
+/* PRODUTOS */
+
+/* FEEDBACKS */
+
+/* CONTATOS */
+
+
 

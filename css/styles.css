@@ -329,7 +329,7 @@ font-size: 15px;
 footer .last {
   width: 100%;
   height: 50px;
-  background: var(--lightpurple);
+  background: var(--pink);
   color: white;
   display: flex;
   align-items: center;

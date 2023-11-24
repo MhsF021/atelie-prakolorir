@@ -1,12 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
+
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
   outline: none;
   font-family: 'Roboto';
+}
+:root {
+  --pink: #E5057A;
+  --lightblue: #6eadff;
+  --yellow: #e1e505;
 }
 
 h1 {
@@ -34,7 +40,7 @@ Por meio da criação de classes
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(255, 255, 255);
+  background-color: white;
 }
 
 .nav-content {
@@ -60,7 +66,7 @@ Por meio da criação de classes
 }
 
 .navbar-list li:hover {
-  background-color: rgb(110, 173, 255);
+  background-color: var(--lightblue);
   transition: 0.3s;
   cursor: pointer;
 }
@@ -69,7 +75,7 @@ Por meio da criação de classes
   text-decoration: none;
   display: flex;
   align-items: center;
-  color: rgb(0, 0, 0);
+  color: black;
   height: 50px;
   font-weight: 600;
 }
@@ -114,7 +120,7 @@ Por meio da criação de classes
 
 .button-home:hover {
   transition: 0.3s;
-  color: #E5057A;
+  color: var(--pink);
   background-color: white;
 }
 
@@ -172,8 +178,8 @@ Por meio da criação de classes
 .button-about {
   padding: 5px 40px;
   background-color: transparent;
-  border: 3px solid #E5057A;
-  color: #E5057A;
+  border: 3px solid var(--pink);
+  color: var(--pink);
   border-radius: 20px;
   font-size: 20px;
   cursor: pointer;
@@ -182,7 +188,7 @@ Por meio da criação de classes
 
 .button-about:hover {
   transition: 0.3s;
-  background-color: #E5057A;
+  background-color: var(--pink);
   color: white;
 }
 
@@ -198,45 +204,47 @@ Por meio da criação de classes
   background-size: cover;
 }
 
-.box-products {
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
+section .card-wrapper {
+  max-width: 1000px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  grid-gap: 30px;
+  padding-top: 50px;
 }
 
-.title-products {
-  font-size: 60px;
+section .card-item {
+  height:430px;
+  background: var(--lightblue);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card-item img {
+  margin-top: 20px;
+  width: 60%;
+}
+
+.card-item h4 {
+  width: 90%;
+}
+
+.card-item p {
+  width: 90%;
+  font-style: italic;
   color: white;
-  -webkit-text-stroke: 3px black;
+  text-align: center;
 }
 
-.box-products-itens {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-}
-
-.item {
-  width: 250px;
-  height: 450px;
-  background-color: white;
-  border-radius: 10px;
+.card-content {
+  height: 40%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  gap: 10px;
-}
-
-.item-img {
-  width: 100%;
-  height: 200px;
-  background-color: rgb(165, 165, 165);
+  justify-content: space-around;
 }
 
 .form-align-product {
@@ -251,5 +259,81 @@ Por meio da criação de classes
 
 /* CONTATOS */
 
+footer {
+  width: 100%;
+  height: 250px;
+  background-color: var(--pink);
+  padding-left: 20%;
+}
+
+footer .main {
+  width: 100%;
+  height: 200px;
+  background: var(--purple);
+  padding: 20px 10px;
+}
+
+.footer-links {
+  max-width: 1000px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.footer-prakolorir,
+.footer-alugar,
+.footer-contato,
+.footer-social {
+  color: white;
+  height: 100%;
+  min-height: 100px;
+}
+
+.footer-links h4 {
+  margin-bottom: 10px;
+  margin-bottom: 9%;
+  text-align: center;
+
+}
+
+.footer-links p {
+font-size: 15px;
+}
+.footer-links {
+  margin-bottom:8px;
+}
+
+.main .footer-social i {
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  vertical-align: middle;
+  color: white;
+  font-size: 30px;
+
+}
+
+.main .footer-social a {
+ text-decoration: none;
+}
+
+.main .footer-social p{
+  display: inline-block;
+  margin-left: 15px;
+  color: white;
+  margin-bottom: 8%;
+  
+}
+footer .last {
+  width: 100%;
+  height: 50px;
+  background: var(--lightpurple);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 

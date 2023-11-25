@@ -196,7 +196,6 @@ Por meio da criação de classes
 
 .container-products {
   width: 100%;
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -262,14 +261,13 @@ section .card-item {
 footer {
   width: 100%;
   height: 250px;
+  display: flex;
+  justify-content: center;
   background-color: var(--pink);
-  padding-left: 20%;
 }
 
 footer .main {
-  width: 100%;
-  height: 200px;
-  background: var(--purple);
+  width: 80%;
   padding: 20px 10px;
 }
 
@@ -324,8 +322,8 @@ font-size: 15px;
   margin-left: 15px;
   color: white;
   margin-bottom: 8%;
-  
 }
+
 footer .last {
   width: 100%;
   height: 50px;
